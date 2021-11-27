@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="AppSettingsACLAccountCell" customModule="ACL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lED-wq-SwT">
+                        <rect key="frame" x="15" y="16" width="149" height="32"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-dD-38C">
+                        <rect key="frame" x="0.0" y="63" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.61460083720000003" green="0.69266152380000001" blue="0.81569868329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MFf-vI-BzL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-wn-NTX">
+                        <rect key="frame" x="169" y="16" width="135" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="h7v-sr-29E"/>
+                            <constraint firstAttribute="width" constant="135" id="lnf-gm-MjW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                        <state key="normal" title="Sign up">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="21"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="signupAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MC4-j1-rNV"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Account white arrow" translatesAutoresizingMaskIntoConstraints="NO" id="yVU-Q1-EBX">
+                        <rect key="frame" x="280" y="14" width="8" height="46"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="KZh-wq-ZJu"/>
+                            <constraint firstAttribute="width" constant="8" id="XST-RH-m4G"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hsG-dD-38C" secondAttribute="bottom" id="2t7-ze-wih"/>
+                    <constraint firstAttribute="trailing" secondItem="hsG-dD-38C" secondAttribute="trailing" id="3FL-cy-xMS"/>
+                    <constraint firstItem="lED-wq-SwT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BHk-r3-llU"/>
+                    <constraint firstItem="lED-wq-SwT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DoA-Du-K97"/>
+                    <constraint firstItem="hsG-dD-38C" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lcs-wn-NTX" secondAttribute="bottom" constant="5" id="SF5-4J-YQb"/>
+                    <constraint firstItem="lED-wq-SwT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="ZbP-n2-afx"/>
+                    <constraint firstItem="lcs-wn-NTX" firstAttribute="leading" secondItem="lED-wq-SwT" secondAttribute="trailing" constant="5" id="adV-ou-umo"/>
+                    <constraint firstAttribute="trailing" secondItem="lcs-wn-NTX" secondAttribute="trailing" constant="16" id="dSu-9c-TRN"/>
+                    <constraint firstItem="yVU-Q1-EBX" firstAttribute="centerY" secondItem="lcs-wn-NTX" secondAttribute="centerY" id="isl-Rd-uWa"/>
+                    <constraint firstItem="lcs-wn-NTX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k6O-4T-YKm"/>
+                    <constraint firstItem="yVU-Q1-EBX" firstAttribute="trailing" secondItem="lcs-wn-NTX" secondAttribute="trailing" constant="-16" id="ntA-IF-5ol"/>
+                    <constraint firstItem="hsG-dD-38C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="t7L-yM-77j"/>
+                    <constraint firstItem="lcs-wn-NTX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="y7A-Q3-twj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="signupButton" destination="lcs-wn-NTX" id="7o7-Ui-gNu"/>
+                <outlet property="titleLabel" destination="lED-wq-SwT" id="gqe-xg-U8U"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="170.46476761619192"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Account white arrow" width="14" height="27.5"/>
+    </resources>
+</document>
